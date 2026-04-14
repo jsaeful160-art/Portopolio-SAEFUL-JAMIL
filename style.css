@@ -1,0 +1,57 @@
+/** Global Styles *
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #333;
+}
+
+/* Glassmorphism Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Styles */
+.card {
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+/* Animation Example */
+.fade-in {
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(to top right, #00c6ff, #0072ff);
+    }
+
+    .card {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .glass {
+        padding: 15px;
+        border-radius: 10px;
+    }
+}
