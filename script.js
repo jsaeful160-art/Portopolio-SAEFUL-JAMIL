@@ -28,7 +28,6 @@ window.addEventListener('scroll', function() {
 const cards3D = document.querySelectorAll('.card-3d-container');
 
 cards3D.forEach(card => {
-    // Desktop 3D Effect
     if (window.innerWidth > 768) {
         card.addEventListener('mousemove', function(e) {
             const rect = this.getBoundingClientRect();
@@ -103,10 +102,25 @@ let resizeTimer;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
-        // Reset card transforms on resize
         document.querySelectorAll('.card-3d').forEach(card => {
             card.style.transform = 'rotateX(0) rotateY(0) scale(1)';
         });
+    }, 250);
+});
+
+// Optimize animations untuk mobile
+if (window.innerWidth <= 768) {
+    document.querySelectorAll('*').forEach(el => {
+        if (el.style.animation) {
+            const animDuration = el.style.animationDuration;
+            if (animDuration) {
+                el.style.animationDuration = (parseFloat(animDuration) * 0.75) + 's';
+            }
+        }
+    });
+}
+
+console.log('✅ Portfolio SAEFUL JAMIL loaded successfully!');        });
     }, 250);
 });
 
