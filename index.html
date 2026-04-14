@@ -1,34 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Portfolio - SAEFUL JAMIL</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to my Portfolio</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Description about myself.</p>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
+    <!-- Aurora Background Container -->
+    <div class="aurora-container">
+        <div class="aurora-wave aurora-1"></div>
+        <div class="aurora-wave aurora-2"></div>
+        <div class="aurora-wave aurora-3"></div>
+        <div class="aurora-wave aurora-4"></div>
+        <div class="aurora-wave aurora-5"></div>
+    </div>
+
+    <!-- Aurora Glow Circles -->
+    <div class="aurora-glow glow-circle-1"></div>
+    <div class="aurora-glow glow-circle-2"></div>
+    <div class="aurora-glow glow-circle-3"></div>
+    <div class="aurora-glow glow-circle-4"></div>
+
+    <!-- Aurora Mesh -->
+    <div class="aurora-mesh"></div>
+
+    <!-- Aurora Light Rays -->
+    <div class="aurora-rays">
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+        <div class="ray"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SAEFUL JAMIL</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                <li><a href="#skill" class="nav-link">Skill</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="card-3d-container">
+                <div class="card-3d">
+                    <div class="card-front glass-card">
+                        <h1 class="title">SAEFUL JAMIL</h1>
+                        <p class="subtitle">Developer PHP | Jaringan Komputer | UI/UX Designer</p>
+                        <p class="university">Mahasiswa Universitas Komputama</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+                            <a href="#skill" class="btn btn-secondary">Lihat Skill</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
+        </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section id="tentang" class="tentang">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="card-3d-container card-about">
+                    <div class="card-3d">
+                        <div class="card-front glass-card">
+                            <h3>Profil</h3>
+                            <p>Saya adalah mahasiswa Universitas Komputama yang passionate dalam dunia teknologi. Saya memiliki keahlian dalam pengembangan website dengan PHP, jaringan komputer, dan desain UI/UX menggunakan Figma.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-3d-container card-about">
+                    <div class="card-3d">
+                        <div class="card-front glass-card">
+                            <h3>Pengalaman</h3>
+                            <p>Berpengalaman dalam membuat website dinamis, mengelola jaringan komputer, dan merancang interface yang modern dan user-friendly dengan tools profesional.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>Contact information</p>
+        </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section id="skill" class="skill">
+        <div class="container">
+            <h2 class="section-title">Skill & Keahlian</h2>
+            <div class="skill-grid">
+                <div class="card-3d-container skill-card-container">
+                    <div class="card-3d">
+                        <div class="card-front glass-card skill-card">
+                            <div class="skill-icon">💻</div>
+                            <h3>PHP Developer</h3>
+                            <p>Pengembangan website dinamis dengan PHP, database management, dan backend development</p>
+                            <div class="skill-level">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-3d-container skill-card-container">
+                    <div class="card-3d">
+                        <div class="card-front glass-card skill-card">
+                            <div class="skill-icon">🌐</div>
+                            <h3>Jaringan Komputer</h3>
+                            <p>Konfigurasi jaringan, troubleshooting, dan network security</p>
+                            <div class="skill-level">
+                                <div class="progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-3d-container skill-card-container">
+                    <div class="card-3d">
+                        <div class="card-front glass-card skill-card">
+                            <div class="skill-icon">🎨</div>
+                            <h3>UI/UX Design (Figma)</h3>
+                            <p>Desain interface modern, prototyping, dan user experience design</p>
+                            <div class="skill-level">
+                                <div class="progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-3d-container skill-card-container">
+                    <div class="card-3d">
+                        <div class="card-front glass-card skill-card">
+                            <div class="skill-icon">🖥️</div>
+                            <h3>Frontend Development</h3>
+                            <p>HTML5, CSS3, JavaScript untuk menciptakan website yang interaktif dan responsif</p>
+                            <div class="skill-level">
+                                <div class="progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-content">
+                <div class="card-3d-container contact-card-container">
+                    <div class="card-3d">
+                        <div class="card-front glass-card">
+                            <h3>📧 Email</h3>
+                            <p><a href="mailto:saeja115@gmail.com">saeja115@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-3d-container contact-card-container">
+                    <div class="card-3d">
+                        <div class="card-front glass-card">
+                            <h3>📱 Telepon</h3>
+                            <p><a href="tel:083875982187">083875982187</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-3d-container contact-card-container">
+                    <div class="card-3d">
+                        <div class="card-front glass-card">
+                            <h3>📸 Instagram</h3>
+                            <p><a href="https://instagram.com/saeja115" target="_blank">@saeja115</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 SAEFUL JAMIL - Semua Hak Dilindungi</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
